@@ -1,5 +1,4 @@
-      - name: Run tests
-        run: go test ./...name: ci
+name: ci
 
 on:
   pull_request:
