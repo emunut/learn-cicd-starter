@@ -1,4 +1,5 @@
-name: ci
+      - name: Run tests
+        run: go test ./...name: ci
 
 on:
   pull_request:
@@ -18,5 +19,5 @@ jobs:
         with:
           go-version: "1.26.0"
 
-      - name: Check Go version
-        run: go version
+      - name: Run tests
+        run: go test ./...
