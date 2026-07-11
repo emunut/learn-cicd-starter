@@ -15,7 +15,7 @@ func TestGetAPIKey(t *testing.T) {
 		{
 			name:       "valid API key",
 			authHeader: "ApiKey test-key-123",
-			want:       "wrong-test-key-123",
+			want:       "test-key-123",
 			wantErr:    false,
 		},
 		{
