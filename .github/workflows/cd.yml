@@ -28,4 +28,6 @@ jobs:
         run: ./scripts/buildprod.sh
 
       - name: Run database migrations
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
         run: ./scripts/migrateup.sh
